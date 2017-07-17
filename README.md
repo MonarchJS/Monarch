@@ -1,2 +1,4 @@
 # Overify
-Multi server node hosting made simple
+Multi server Node.JS hosting made simple for Web Apps.
+
+[logo]: https://risingstack.com/static/images/trace.png "Overify"
