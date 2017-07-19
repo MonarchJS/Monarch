@@ -4,12 +4,16 @@
   "description": "Multi Node.JS server framework",
   "main": "source/index.js",
   "scripts": {
-    "start": "node test/server",
-    "client": "node client/index.js"
+    "start": "node server/server.js",
+    "test": "xo",
+    "client": "node client/source/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MonarchJS/Monarch.git"
+  },
+  "xo": {
+    "semicolon": false
   },
   "keywords": [
     "node",
