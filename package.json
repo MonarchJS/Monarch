@@ -1,16 +1,17 @@
 {
-  "name": "monarch",
+  "name": "nethive",
   "version": "0.0.1",
   "description": "Multi Node.JS server framework",
   "main": "source/index.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "nodemon examples/server/index.js",
+    "all": "concurrently 'nodemon examples/server/index.js' 'webpack -w'",
     "test": "xo",
-    "client": "node client/source/index.js"
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MonarchJS/Monarch.git"
+    "url": "git+https://github.com/NetHive/NetHive.git"
   },
   "xo": {
     "semicolon": false
@@ -20,19 +21,26 @@
     "server",
     "express"
   ],
-  "author": "Julien Ferluc (EntrybotJS)",
+  "author": "Julien Ferluc <ferluc.julien@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/MonarchJS/Monarch/issues"
+    "url": "https://github.com/NetHive/NetHive/issues"
   },
-  "homepage": "https://github.com/MonarchJS/Monarch#readme",
+  "homepage": "https://github.com/NetHive/NetHive#readme",
   "dependencies": {
     "express": "^4.15.3",
-    "socket.io": "^2.0.3",
-    "socket.io-client": "^2.0.3"
+    "net": "^1.0.2"
   },
   "devDependencies": {
     "ava": "^0.21.0",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "concurrently": "^3.5.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.3.0",
     "xo": "^0.18.2"
   }
 }
