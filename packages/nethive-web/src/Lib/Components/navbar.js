@@ -4,10 +4,12 @@ export default class navbar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            connexion: false
+            connected: false
         }
     }
-
+    handleConnectionStatus() {
+        return false
+    }
     render() {
         return(
             <div>
