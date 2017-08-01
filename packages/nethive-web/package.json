@@ -21,6 +21,7 @@
     "eject": "react-scripts eject"
   },
   "xo": {
-    "semicolon": false
+    "semicolon": false,
+    "env": ["browser", "react"]
   }
 }

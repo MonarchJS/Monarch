@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import notFound from './Components/notFound'
+import notFound from './Components/not-found'
 import index from './Components/index'
-import './App.css'
+import './app.css'
 
 export default class App extends Component {
 	render() {
